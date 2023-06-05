@@ -6,8 +6,8 @@ const Education = () => {
         <section id="education" className='container'>
             <h5 className='focus__Title'>Education</h5>
 
-            <div className='edu__Content'>
-                <a href="https://cybersoft.edu.vn/" className='myitem col-lg-6'>
+            <div className=''>
+                <a href="https://cybersoft.edu.vn/" className='myitem'>
                     <div className='  hover__Text'>
                         <div className="hover__Overlay"></div>
                         <span className='focus__Text'>CYBERSOFT ACADEMY</span>
@@ -15,7 +15,7 @@ const Education = () => {
                     </div>
                 </a>
 
-                <a className=' myitem col-lg-6 ' href="https://en.ctuet.edu.vn/">
+                <a className=' myitem ' href="https://en.ctuet.edu.vn/">
                     <div className=' hover__Text'>
                         <div className="hover__Overlay"></div>
                         <span className='focus__Text'>CAN THO UNIVERSITY OF TECHNOLOGY</span>

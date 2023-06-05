@@ -1,6 +1,6 @@
 /* Common */
 section {
- margin-bottom: 5rem;
+  padding: 5rem 0;
 }
 
 /* Hover */
@@ -75,7 +75,7 @@ section {
 }
 
 .myitem:hover .hover__Overlay {
-  opacity: 50%;
+  opacity: 40%;
 
 }
 

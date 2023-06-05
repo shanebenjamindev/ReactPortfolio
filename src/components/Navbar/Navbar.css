@@ -1,5 +1,4 @@
 /* Navbar */
-
 .fixedContent {
   position: relative;
   color: white;
@@ -64,4 +63,16 @@
   font-size: 1.5rem;
   position: absolute;
   bottom: 5rem;
+}
+
+.contact__SocialIcon {
+  padding: 30px 0;
+}
+.contact__SocialIcon i {
+  font-size: 1.5em;
+  margin: 0 10px;
+  transition: all 0.3s ease;
+}
+.contact__SocialIcon a:hover i{
+  color: white !important;
 }

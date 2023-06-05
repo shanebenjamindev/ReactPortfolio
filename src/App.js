@@ -12,6 +12,7 @@ import Skills from './components/Skills/Skills';
 import Experience from './components/Experience/Experience';
 import Projects from './components/Projects/Projects';
 import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
 
 import 'animate.css';
 import WOW from 'wowjs';
@@ -66,11 +67,12 @@ function App() {
         </div>
         <div className="Content">
           <About />
-          <Education />
           <Skills />
+          <Education />
           <Experience />
           <Projects />
           <Contact />
+          <Footer />
         </div>
       </div>
     </div>

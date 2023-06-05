@@ -19,6 +19,10 @@
   .fixedContent {
     all: unset !important;
   }
+
+  .left__Bottom {
+    all: unset !important;
+  }
 }
 /* moblie: width < 740px */
 @media screen and (max-width: 739px) {
@@ -26,21 +30,24 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    padding: 4rem;
     width: unset;
+  }
+  .myitem img {
+    width: 100%;
+  }
+  .hover__Overlay {
+    width: 105%;
+  }
+  .btnsubmit {
+    width: 100%;
   }
 
   .Content {
-    width: 80%;
+    width: 95%;
     margin: auto;
   }
   .fixedContent {
     all: unset !important;
-  }
-
-
-  .Content {
-    all: unset;
   }
 
   .fixedContent {
@@ -52,8 +59,9 @@
   }
 
   .left__Bottom {
-    all: unset;
+    all: unset !important;
   }
+
   .intro h1,
   .intro h3 {
     font-size: 22px;
