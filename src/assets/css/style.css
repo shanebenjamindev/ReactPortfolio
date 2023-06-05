@@ -1,0 +1,157 @@
+/* Reset */
+@import url("./_Reset.css");
+
+/* Common: hover, focus, myItem */
+@import url("./_Common.css");
+
+/* Variables */
+@import url("./_Variable.css");
+
+/* Style */
+.main {
+  position: relative;
+  display: flex;
+  color: var(--text-color);
+}
+
+.intro h1 {
+  font-size: 50px;
+}
+/* Navbar */
+
+.Left__Content {
+  position: relative;
+  color: white;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  padding: 5rem 0;
+}
+
+.nav__Link span {
+  position: relative;
+  left: 40px;
+}
+.nav__Link {
+  margin-top: 20px;
+  position: relative;
+  color: #4e5f7d;
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+}
+
+.nav__Link a,
+.nav__Link span {
+  transition: 0.2s ease-in-out;
+}
+
+.nav__Link::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 30px;
+  height: 1px;
+  background-color: #4e5f7d;
+  transition: width 0.2s ease-out;
+}
+
+.nav__Link:hover::before,
+.nav__Link span:hover::before,
+.nav__Link.active::before {
+  width: 45px;
+  background-color: white;
+}
+
+.nav__Link.active span {
+  color: white;
+  position: relative;
+  left: 60px;
+  transition: 0.3s ease-out;
+}
+
+.nav__Link:hover span {
+  color: white;
+  position: relative;
+  left: 60px;
+}
+
+.nav li:first-child {
+  margin-left: 0;
+}
+
+.left__Bottom {
+  font-size: 1.5rem;
+  position: absolute;
+  bottom: 5rem;
+}
+
+/* RightContent */
+.right__Content {
+  padding: 5rem 0;
+  color: var(--p-fade-color);
+  font-size: 0.9rem;
+}
+
+/* CURSOR TRAIL */
+.cursor-trail {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  pointer-events: none;
+  transition: all 0.1s ease;
+  /* background-color: rgba(134, 255, 247, 0.5); */
+  box-shadow:  0 0 10rem 4rem rgb(4, 67, 195);
+}
+
+/* RESPONSIVE */
+/*  pc: width >= 1024px */
+@media screen and (min-width: 1025px) {
+  .fixed {
+    width: 50%;
+  }
+  .scrollable {
+    width: 50%;
+  }
+
+  .focus__Title {
+    display: none;
+  }
+}
+/* tablet: 740<= width < 1024 */
+@media screen and (min-width: 740px) and (max-width: 1024px) {
+}
+/* moblie: width < 740px */
+@media screen and (max-width: 739px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+  .fixed {
+    margin-top: 5rem;
+    position: unset;
+  }
+  .Left__Content {
+    all: unset;
+  }
+
+  .left__Body {
+    display: none;
+  }
+
+  .left__Bottom {
+    all: unset;
+  }
+  .intro h1,
+  .intro h3 {
+    font-size: 22px;
+  }
+
+  .myitem {
+    display: flex;
+    flex-direction: column;
+    gap: unset;
+  }
+}

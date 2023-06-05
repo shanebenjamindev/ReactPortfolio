@@ -1,0 +1,8 @@
+:root {
+  --primary-color: black;
+  --text-color: #fff;
+  --p-fade-color: #7183a6;
+  --focus-background: rgba(45, 212, 191, 0.1);
+  --focus-item-color: rgb(94 234 212);
+  --transparent-color: #161e30;
+}

@@ -1,0 +1,67 @@
+/* Navbar */
+
+.fixedContent {
+  position: relative;
+  color: white;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  padding: 5rem 0;
+}
+
+.nav__Link span {
+  position: relative;
+  left: 40px;
+}
+.nav__Link {
+  margin-top: 20px;
+  position: relative;
+  color: #4e5f7d;
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+}
+
+.nav__Link a,
+.nav__Link span {
+  transition: 0.2s ease-in-out;
+}
+
+.nav__Link::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 30px;
+  height: 1px;
+  background-color: #4e5f7d;
+  transition: width 0.2s ease-out;
+}
+
+.nav__Link:hover::before,
+.nav__Link span:hover::before,
+.nav__Link.active::before {
+  width: 45px;
+  background-color: white;
+}
+
+.nav__Link.active span {
+  color: white;
+  position: relative;
+  left: 60px;
+  transition: 0.3s ease-out;
+}
+
+.nav__Link:hover span {
+  color: white;
+  position: relative;
+  left: 60px;
+}
+
+.nav li:first-child {
+  margin-left: 0;
+}
+
+.left__Bottom {
+  font-size: 1.5rem;
+  position: absolute;
+  bottom: 5rem;
+}
