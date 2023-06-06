@@ -1,7 +1,7 @@
 import React from 'react';
-import pro1 from '../img/1.png'
-import pro2 from '../img/5.bmp'
-import pro3 from '../img/2.png'
+import pro1 from '../../assets/img/1.png'
+import pro2 from '../../assets/img/5.bmp'
+import pro3 from '../../assets/img/2.png'
 import './Projects.css'
 const Projects = () => {
     return (

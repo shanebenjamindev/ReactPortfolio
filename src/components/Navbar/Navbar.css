@@ -5,7 +5,9 @@
   position: fixed;
   top: 0;
   height: 100vh;
-  padding: 5rem 0;
+  padding: 15rem 0;
+  font-size: 120%;
+  font-weight: lighter;
 }
 
 .nav__Link span {

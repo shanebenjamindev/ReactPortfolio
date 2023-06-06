@@ -1,8 +1,6 @@
 import React from 'react';
 import './Navbar.css'
 const Navbar = () => {
-
-
     return (
         <div className="fixed col-lg-6">
             <div className="fixedContent wow animate__animated animate__fadeIn">
@@ -46,11 +44,7 @@ const Navbar = () => {
                                     <span>Projects</span>
                                 </li></a
                             >
-                            <a href="#contact"
-                            ><li className="nav__Link">
-                                    <span>Contact</span>
-                                </li></a
-                            >
+                          
                         </ul>
                     </nav>
                 </div>

@@ -1,11 +1,12 @@
 /* Style */
 .main {
-  width: 60%;
+  width: 50%;
   margin: auto;
   position: relative;
   display: flex;
   color: var(--text-color);
   flex-wrap: wrap;
+  padding: 7rem 0;
 }
 
 .Content {

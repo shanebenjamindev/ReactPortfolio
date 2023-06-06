@@ -1,12 +1,19 @@
-.skills__Content {
-    display: flex;
-    justify-content: space-between;
-  gap: 0.2rem;
-    flex-wrap: wrap;
-}
-li{
-    transition: all 0.3s ease;
+li {
+  transition: all 0.3s ease;
 }
 li:hover {
-    color: white;
+  color: white;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex li {
+    padding: 0.5rem;
+}
+
+.skills__Content{
+    display: flex;
 }

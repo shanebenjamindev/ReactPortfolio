@@ -13,6 +13,7 @@ import Experience from './components/Experience/Experience';
 import Projects from './components/Projects/Projects';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
+import Breadcrumb from './components/BreadcrumbNav/BreadcrumbNav';
 
 import 'animate.css';
 import WOW from 'wowjs';
@@ -42,7 +43,7 @@ function App() {
       if (navLinks && navLinks.length > 0) {
         let index = sections.length;
 
-        while (--index && window.scrollY + 500 < sections[index].offsetTop) { }
+        while (--index && window.scrollY + 350 < sections[index].offsetTop) { }
 
         navLinks.forEach((link) => link.classList.remove('active'));
         navLinks[index] && navLinks[index].classList.add('active');
@@ -62,6 +63,7 @@ function App() {
 
       <div className='main'>
         <div className="cursor-trail"></div>
+        <Breadcrumb />
         <div className="Content">
           <Navbar />
         </div>

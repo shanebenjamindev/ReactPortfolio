@@ -1,0 +1,27 @@
+#breadcrumb {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  z-index: 999;
+  height: 50px;
+  color: white;
+  display: none;
+  margin: auto;
+}
+
+.breadContent {
+  padding: 0.5rem;
+  border-radius: 5px;
+  box-shadow: inset 0 0 10rem 4rem rgb(4, 67, 195);
+  width: 90%;
+  margin: auto;
+  z-index: 111;
+}
+
+@media screen and (max-width: 739px) {
+  #breadcrumb {
+    display: block;
+  }
+}
