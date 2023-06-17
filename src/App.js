@@ -60,8 +60,7 @@ function App() {
 
   return (
     <div className="App">
-
-      <div className='main'>
+      <div className="main">
         <div className="cursor-trail"></div>
         <Breadcrumb />
         <div className="Content">

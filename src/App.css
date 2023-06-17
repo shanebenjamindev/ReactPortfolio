@@ -1,6 +1,6 @@
 /* Style */
 .main {
-  width: 50%;
+  width: 60%;
   margin: auto;
   position: relative;
   display: flex;
@@ -23,7 +23,6 @@
   height: 0;
   border-radius: 50%;
   pointer-events: none;
-  transition: all 0.1s ease;
   /* background-color: rgba(134, 255, 247, 0.5); */
-  box-shadow: 0 0 10rem 4rem rgb(4, 67, 195);
+  box-shadow: 0 0 20rem 4rem rgb(0, 30, 255);
 }

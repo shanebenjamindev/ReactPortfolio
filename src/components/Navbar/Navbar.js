@@ -2,7 +2,7 @@ import React from 'react';
 import './Navbar.css'
 const Navbar = () => {
     return (
-        <div className="fixed col-lg-6">
+        <div className="">
             <div className="fixedContent wow animate__animated animate__fadeIn">
                 <div className="left__Header intro">
                     <h1>Vo Giang</h1>

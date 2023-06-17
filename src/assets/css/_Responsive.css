@@ -17,9 +17,12 @@
     margin: auto;
   }
   .fixedContent {
-    all: unset !important;
+    position: unset !important;
+    height: unset !important;
   }
-
+  .left__Body{
+    display: none;
+  }
   .left__Bottom {
     all: unset !important;
   }

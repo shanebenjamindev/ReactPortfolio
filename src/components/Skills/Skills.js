@@ -1,7 +1,7 @@
 import React from 'react';
 import './Skills.css'
 const Skills = () => {
-    let skills = ['HTML', 'CSS', 'SASS', 'JavaScript', 'jQuery', 'PHP', 'Responsive', 'Bootstrap', 'MVC', 'Git'];
+    let skills = ['HTML', 'CSS', 'SASS', 'JavaScript', 'jQuery', 'RestfulApi', 'PHP', 'Responsive', 'MVC', 'Git'];
     let knowledges = ["Reactjs", "Perfect Pixel"]
     return (
         <section id="skills">
@@ -19,14 +19,13 @@ const Skills = () => {
                 <div className="">
                     <div className="hover__Overlay"></div>
                     <h5 className='focus__Title'>Knowledge</h5>
-                    <span>(skills that i know but i am not master yet)</span>
-                    <ul>
+                    <ul className='flex'>
                         {knowledges.map(knowledge => (
                             <li key={knowledge}>{knowledge}</li>
                         ))}
                     </ul>
                 </div>
-               
+
             </div>
         </section>
     );

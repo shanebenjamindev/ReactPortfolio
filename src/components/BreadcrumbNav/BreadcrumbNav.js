@@ -20,8 +20,10 @@ const Breadcrumb = () => {
                     activeSection = section.getAttribute('id');
                 }
             });
+            if (activeSection){
 
-            setActiveSection(activeSection);
+                setActiveSection(activeSection);
+            }
         };
 
         window.addEventListener('scroll', handleScroll);
@@ -33,8 +35,14 @@ const Breadcrumb = () => {
     const scrollToSection = (sectionId) => {
         const section = document.getElementById(sectionId);
         if (section) {
+            const viewportHeight = window.innerHeight;
+            const sectionHeight = section.offsetHeight;
+            const offsetTop = section.offsetTop;
+
+            const scrollToOffset = Math.max(0, offsetTop - (viewportHeight - sectionHeight) / 2);
+
             window.scrollTo({
-                top: section.offsetTop,
+                top: scrollToOffset,
                 behavior: 'smooth',
             });
         }
@@ -59,7 +67,7 @@ const Breadcrumb = () => {
         if (activeSectionIndex < maxDisplayedItems) {
             filteredBreadcrumbItems = breadcrumbItems.slice(0, activeSectionIndex + 1);
         } else {
-            filteredBreadcrumbItems = breadcrumbItems.slice(activeSectionIndex - maxDisplayedItems + 1, activeSectionIndex + 1);
+            filteredBreadcrumbItems = breadcrumbItems.slice(activeSectionIndex - maxDisplayedItems + 2, activeSectionIndex + 2);
             filteredBreadcrumbItems.unshift({ id: '...', label: '...' });
         }
     }
