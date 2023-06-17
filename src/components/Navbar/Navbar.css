@@ -68,13 +68,29 @@
 }
 
 .contact__SocialIcon {
-  padding: 30px 0;
+  display: flex;
 }
+
+.flexIcon{
+  display: flex;
+}
+
 .contact__SocialIcon i {
   font-size: 1.5em;
   margin: 0 10px;
   transition: all 0.3s ease;
 }
+
+.contact__SocialIcon:hover .phone {
+  opacity: 1;
+}
+
+.contact__SocialIcon .phone{
+  padding: unset;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
 .contact__SocialIcon a:hover i{
   color: white !important;
 }

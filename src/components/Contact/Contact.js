@@ -8,6 +8,9 @@ function Contact() {
 
     const handleClick = () => {
         setShowForm(!showForm);
+        document.getElementById('contactNotification').innerHTML =
+            'CONTACT';
+
     };
 
     const handleSubmit = (e) => {
@@ -21,7 +24,9 @@ function Contact() {
                 (result) => {
                     console.log(result.text);
                     // Handle success
-                    alert('Email sent successfully!');
+                    document.getElementById('contactNotification').innerHTML =
+                        'successfully send mail, thanks for considering and giving me an opportunity';
+
                 },
                 (error) => {
                     console.log(error.text);
@@ -38,7 +43,7 @@ function Contact() {
             <div className="contact">
                 <div className="contactOverlay"></div>
                 <div className="myitem" onClick={handleClick}>
-                    <h5 className="focus__Title">Contact</h5>
+                    <h5 id="contactNotification" className="focus__Title">Contact</h5>
                     <i className="fa-solid fa-angles-down fa-fade"></i>
                 </div>
                 {showForm && (

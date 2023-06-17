@@ -44,7 +44,7 @@ const Navbar = () => {
                                     <span>Projects</span>
                                 </li></a
                             >
-                          
+
                         </ul>
                     </nav>
                 </div>
@@ -54,9 +54,11 @@ const Navbar = () => {
                         <a href="mailto:vophonggiang0205@gmail.com">
                             <i className="fas fa-envelope"></i>
                         </a>
-                        <a type="button" href='https://github.com/vpgiang0205' aria-label="GitHub">
+                        <a href='https://github.com/vpgiang0205' aria-label="GitHub">
                             <i className="fab fa-github"></i>
                         </a>
+                        <a href='tel:0834718218' className='flexIcon'><i className="fa-solid fa-phone"></i>
+                        <span className='phone'> 0834718218</span></a>
                     </div>
                 </div>
             </div>
