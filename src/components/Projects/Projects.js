@@ -12,6 +12,7 @@ const projectArr = [
         img: proApi,
         desc: 'My role is design the layout, function for user interface ensuring a smooth and intuitive experience for users when shopping.',
         code: 'https://github.com/vpgiang0205/CapstoneAPI',
+        deloy: 'https://capstone-api-jade.vercel.app/',
         techStack: ['HTML', 'CSS', 'JavaScript', 'RESTful API', 'Bootstrap', 'Local Storage', 'Responsive'],
     },
     {
@@ -20,6 +21,7 @@ const projectArr = [
         img: pro1,
         desc: 'A fully responsive website for a restaurant with an elegant design and user- friendly interface and it is optimized for mobile devices.',
         code: 'https://github.com/vpgiang0205/CapstoneProject',
+        deloy: 'https://capstone-project-sooty-gamma.vercel.app/',
         techStack: ['HTML', 'CSS', 'jQuery', 'Bootstrap', 'CSS Animation', 'Responsive'],
     },
     {
@@ -28,6 +30,7 @@ const projectArr = [
         img: pro2,
         desc: 'The Samar project boasts a friendly design that is easy on the eyes and incorporates smooth animations to enhance the user experience.',
         code: 'https://github.com/vpgiang0205/SAMAR',
+        deloy: 'https://samar-one.vercel.app/',
         techStack: ['HTML', 'CSS', 'jQuery', 'Bootstrap', 'CSS Animation'],
     },
     {
@@ -36,6 +39,7 @@ const projectArr = [
         img: pro3,
         desc: '  Have a contact form that allows visitors to send messages directly to me, easy for potential clients or employers to reach out.',
         code: 'https://github.com/vpgiang0205/portfoliothefinal',
+        deloy: 'https://portfoliothefinal-iwzh.vercel.app/',
         techStack: ['HTML', 'CSS', 'jQuery', 'Bootstrap', 'Responsive'],
     }
     // Add more project objects here
@@ -47,7 +51,7 @@ const Projects = () => {
             <h5 className="focus__Title">PERSONAL PROJECTS</h5>
 
             {projectArr.map((project) => (
-                <a href={`https://example.com/${project.id}`} key={project.id}>
+                <a href={`${project.deloy}`} key={project.deloy}>
                     <div className="myitem">
                         <div className="hover__Overlay"></div>
                         <div className="myitem__Content">
